@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag 9imgs/nginx:latest
+      run: docker build . --file Dockerfile --tag 9img/nginx:latest
     - name: Push the Docker image
-      run: docker push 9imgs/nginx:latest
+      run: docker push 9img/nginx:latest
       
